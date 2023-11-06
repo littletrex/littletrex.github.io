@@ -340,7 +340,7 @@
                 // labelContainer.childNodes[i].innerHTML = Predct_Name + " : " + Predct_Probability;
             }
         if (sendClicked){        
-            labelContainer.firstChild.innerHTML = "您看起來有" + Math.floor(pred_result[0]*100) + "%心情是 " + pred_result[1];
+            labelContainer.firstChild.innerHTML = "鎖匙看起來有" + Math.floor(pred_result[0]*100) + "%是 " + pred_result[1];
                 //****POST Value****
             $.ajax({
                     url: "https://io.adafruit.com/api/v2/" + aio_n + "/feeds/" + aio_f + "/data?X-AIO-Key=" + aio_k,
