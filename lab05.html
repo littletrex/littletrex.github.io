@@ -204,7 +204,7 @@
 <div id="label-container" class="label"></div>
 <br>
 <div id="webcam-container" class="cam"></div>
-<button id="sendBtn" type="button" onclick="preding()" >分享心情</button>
+<button id="sendBtn" type="button" onclick="preding()" >辨認鎖匙</button>
 </div>
 <!-- </div> -->
 <!-- <div class="right"></div> -->
@@ -295,7 +295,7 @@
         window.requestAnimationFrame(loop); // update canvas by loop-function
         document.getElementById("sendBtn").style.display = "block";
         // 更改 讀取中 文字
-        labelContainer.firstChild.innerHTML = "準備好後請按下分享心情按鈕";
+        labelContainer.firstChild.innerHTML = "準備好後請按下辨認鎖匙按鈕";
         //增加放 label 的 Div
         for (let i = 0; i < maxPredictions; i++) { // and class labels
                 labelContainer.appendChild(document.createElement("div"));
@@ -311,7 +311,7 @@
 
     // run the webcam image through the image model
     function preding() {
-        labelContainer.firstChild.innerHTML = '心情辨識中...';
+        labelContainer.firstChild.innerHTML = '鎖匙辨識中...';
         // document.getElementById("sendBtn").style.backgroundColor = "#bbb";
         // document.getElementById("sendBtn").setAttribute("disabled","true");
         console.log("辨識中");
